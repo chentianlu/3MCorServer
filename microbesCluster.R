@@ -3,7 +3,7 @@
 # File: microbesCluster.R
 # Aim : Clustering for microbiome data
 #---------------------------------------------------------------------------------------------------------------------
-# Author : Tianlu Chen
+# Author : Tianlu Chen, Tao Sun, Dandan Liang, Mengci Li
 # Email  : chentianlu@sjtu.edu.cn
 # Date   : 2020-08
 # Version: 1.0
@@ -12,7 +12,7 @@
 #
 ######################################################################################
 ## Input:                                                                           ##
-##		micData --- A dataframe of microbes                                           ##
+##    micData --- A dataframe of microbes                                           ##
 ##                       (rows: samples,columns: microbes)                          ## 
 ##    phenoData --- A dataframe of phenotype data                                   ##
 ##                (rows: samples,columns: phenotype)                                ##
@@ -25,7 +25,7 @@
 ##                                                                                  ##
 ######################################################################################
 ## Output:                                                                          ## 
-## 	  list_res --- A list included the classified microbiome modules results        ##                             
+##    list_res --- A list included the classified microbiome modules results        ##                             
 ##                                                                                  ##
 ######################################################################################
 #---------------------------------------------------------------------------------------------------------------------
@@ -172,7 +172,7 @@ microbesCluster <- function(micData,phenoData,phenoDataType,dimReduMethod = "WGC
       ################################################################################
       
       ### This is a core analysis step generating associations between the
-      ### integrated/clustered ¨Comics data and a clinically interesting phenotype.
+      ### integrated/clustered Â¨Comics data and a clinically interesting phenotype.
       
       cor_age <- list () ### Data structure for storing results of correlation tests under different setups
       tmpMat = array (NA, c (ncol (MEsMic), length(colnames(phenotypes)), 2))
@@ -439,7 +439,7 @@ microbesCluster <- function(micData,phenoData,phenoDataType,dimReduMethod = "WGC
       ########################################################################
       
       ### This is a core analysis step generating associations between the
-      ### integrated/clustered ¨Comics data and a clinically interesting phenotype.
+      ### integrated/clustered Â¨Comics data and a clinically interesting phenotype.
       
       cor_pheno <- list() ### Data structure for storing results of correlation tests under different setups
       tmpMat = array(NA, c(ncol(MEsMic), length(colnames(phenotypes)), 2))
@@ -683,7 +683,7 @@ microbesCluster <- function(micData,phenoData,phenoDataType,dimReduMethod = "WGC
       ########################################################################
       
       ### This is a core analysis step generating associations between the
-      ### integrated/clustered ¨Comics data and a clinically interesting phenotype.
+      ### integrated/clustered Â¨Comics data and a clinically interesting phenotype.
       
       cor_pheno <- list() ### Data structure for storing results of correlation tests under different setups
       tmpMat = array(NA, c(ncol(MEsMic), length(colnames(phenotypes)), 2))

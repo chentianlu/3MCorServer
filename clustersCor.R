@@ -3,7 +3,7 @@
 # File: clustersCor.R
 # Aim : The correlation between metabolome modules and microbiome modules
 #---------------------------------------------------------------------------------------------------------------------
-# Author : Tianlu Chen
+# Author : Tianlu Chen, Tao Sun, Dandan Liang, Mengci Li
 # Email  : chentianlu@sjtu.edu.cn
 # Date   : 2020-08
 # Version: 1.0
@@ -12,9 +12,9 @@
 #
 ########################################################################################
 ## Input:                                                                             ##
-##		metaCluData --- A list included the classified metabolome modules results from  ##
+##    metaCluData --- A list included the classified metabolome modules results from  ##
 ##                   metabolitesCluster.R                                             ##
-##		micCluData --- A list included the classified microbiome modules results from   ##
+##    micCluData --- A list included the classified microbiome modules results from   ##
 ##                   microbesCluster.R                                                ##
 ##    phenoData --- A dataframe of phenotype data                                     ##
 ##                  (rows: samples,columns: phenotype)                                ##
@@ -34,7 +34,7 @@
 ##                                                                                    ##
 ########################################################################################
 ## Output:                                                                            ## 
-## 	  cor_res ---  A list included coefficient, p value and p.adjust value            ##
+##    cor_res ---  A list included coefficient, p value and p.adjust value            ##
 ##                 of the correlation between metabolome modules and microbiome       ##
 ##                 modules                                                            ##
 ##                                                                                    ##

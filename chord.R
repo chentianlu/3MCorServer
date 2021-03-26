@@ -12,7 +12,7 @@
 #
 ########################################################################################
 ## Input:                                                                             ##
-##		cluData --- A list from clustersCor.R included coefficient, p value and         ##
+##    cluData --- A list from clustersCor.R included coefficient, p value and         ##
 ##                p.adjust value of the correlation between metabolome modules and    ##
 ##                microbiome modules from clustersCor.R                               ##
 ##    phenoData --- A dataframe of phenotype data                                     ##

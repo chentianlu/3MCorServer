@@ -3,7 +3,7 @@
 # File: metaIntraCor.R
 # Aim : Intra Correlation analysis for metabolites
 #---------------------------------------------------------------------------------------------------------------------
-# Author : Tianlu Chen
+# Author : Tianlu Chen, Tao Sun, Dandan Liang, Mengci Li
 # Email  : chentianlu@sjtu.edu.cn
 # Date   : 2020-08
 # Version: 1.0
@@ -12,9 +12,9 @@
 #
 ######################################################################################
 ## Input:                                                                           ##
-##		metaIndData --- A dataframe of metabolites                                    ##
-##                       (rows:samples,columns:metabolites)                         ##                    
-##		corMethod --- The method of correlation analysis                              ##
+##    metaIndData --- A dataframe of metabolites                                    ##
+##                       (rows:samples,columns:metabolites)                         ##
+##    corMethod --- The method of correlation analysis                              ##
 ##                Default: spearman                                                 ##
 ##    confounderData --- A dataframe of confounder                                  ##
 ##                       (rows:samples,columns:confounder)                          ##
@@ -22,7 +22,7 @@
 ##                                                                                  ##
 ######################################################################################
 ## Output:                                                                          ## 
-## 	  meta_intra_result --- A list included coefficient, p value and p.adjust value ##
+##    meta_intra_result --- A list included coefficient, p value and p.adjust value ##
 ##                          of intra correlation analysis results for metabolites   ##
 ##                                                                                  ##
 ######################################################################################

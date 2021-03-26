@@ -3,7 +3,7 @@
 # File: metabolitesCluster.R
 # Aim : Clustering for metabolome data
 #---------------------------------------------------------------------------------------------------------------------
-# Author : Tianlu Chen
+# Author : Tianlu Chen, Tao Sun, Dandan Liang, Mengci Li
 # Email  : chentianlu@sjtu.edu.cn
 # Date   : 2020-08
 # Version: 1.0
@@ -12,7 +12,7 @@
 #
 ######################################################################################
 ## Input:                                                                           ##
-##		metaData --- A dataframe of microbes                                          ##
+##    metaData --- A dataframe of microbes                                          ##
 ##                 (rows: samples,columns: microbes)                                ## 
 ##    phenoData --- A dataframe of phenotype data                                   ##
 ##                 (rows: samples,columns: phenotype)                               ##
@@ -24,8 +24,8 @@
 ##                  Default: spearman                                               ##
 ##                                                                                  ##
 ######################################################################################
-## Output:                                                                          ## 
-## 	  list_res --- A list included the classified metabolome modules results        ##                                 
+## Output:                                                                          ##
+##    list_res --- A list included the classified metabolome modules results        ##
 ##                                                                                  ##
 ######################################################################################
 #---------------------------------------------------------------------------------------------------------------------
@@ -172,7 +172,7 @@ metabolitesCluster <- function(metaData,phenoData,phenoDataType,dimReduMethod = 
       ########################################################################
       
       ### This is a core analysis step generating associations between the
-      ### integrated/clustered ¨Comics data and a clinically interesting phenotype.
+      ### integrated/clustered Â¨Comics data and a clinically interesting phenotype.
       
       cor_pheno <- list() ### Data structure for storing results of correlation tests under different setups
       tmpMat = array(NA, c(ncol(MEsMeta), length(colnames(phenotypes)), 2))
@@ -438,7 +438,7 @@ metabolitesCluster <- function(metaData,phenoData,phenoDataType,dimReduMethod = 
       ########################################################################
       
       ### This is a core analysis step generating associations between the
-      ### integrated/clustered ¨Comics data and a clinically interesting phenotype.
+      ### integrated/clustered Â¨Comics data and a clinically interesting phenotype.
       
       cor_pheno <- list() ### Data structure for storing results of correlation tests under different setups
       tmpMat = array(NA, c(ncol(MEsMeta), length(colnames(phenotypes)), 2))
@@ -683,7 +683,7 @@ metabolitesCluster <- function(metaData,phenoData,phenoDataType,dimReduMethod = 
       ########################################################################
       
       ### This is a core analysis step generating associations between the
-      ### integrated/clustered ¨Comics data and a clinically interesting phenotype.
+      ### integrated/clustered Â¨Comics data and a clinically interesting phenotype.
       
       cor_pheno <- list() ### Data structure for storing results of correlation tests under different setups
       tmpMat = array(NA, c(ncol(MEsMeta), length(colnames(phenotypes)), 2))

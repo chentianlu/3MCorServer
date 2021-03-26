@@ -3,7 +3,7 @@
 # File: heatmap3M.R
 # Aim : Draw the heatmap of correlation between metabolome and microbiome modules
 #---------------------------------------------------------------------------------------------------------------------
-# Author : Tianlu Chen
+# Author : Tianlu Chen, Tao Sun, Dandan Liang, Mengci Li
 # Email  : chentianlu@sjtu.edu.cn
 # Date   : 2020-08
 # Version: 1.0
@@ -12,12 +12,12 @@
 #
 ########################################################################################
 ## Input:                                                                             ##
-##		clustersCorData --- A list from clustersCor.R included coefficient, p value     ##
+##    clustersCorData --- A list from clustersCor.R included coefficient, p value     ##
 ##                        and p.adjust value of the correlation between metabolome    ##
 ##                        modules and microbiome modules from clustersCor.R           ##
-##		metaCluData --- A list included the classified metabolome modules results from  ##
+##    metaCluData --- A list included the classified metabolome modules results from  ##
 ##                   metabolitesCluster.R                                             ##
-##		micCluData --- A list included the classified microbiome modules results from   ##
+##    micCluData --- A list included the classified microbiome modules results from   ##
 ##                   microbesCluster.R                                                ##
 ##    phenotype --- The number of nearest neighbours to use in knn imputation         ##
 ##                Default: NA                                                         ##
@@ -33,7 +33,7 @@
 ##                                                                                    ##
 ########################################################################################
 ## Output:                                                                            ## 
-## 	  Graph results in PDF format                                                     ##
+##    Graph results in PDF format                                                     ##
 ##                                                                                    ##
 ########################################################################################
 #---------------------------------------------------------------------------------------------------------------------

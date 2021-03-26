@@ -4,7 +4,7 @@
 # Aim : Generalized Correlation Analysis for Metabolome and Microbiome (GRaMM), for inter-correlation pairs discovery 
 #       among metabolome and microbiome.
 #---------------------------------------------------------------------------------------------------------------------
-# Author : Tianlu Chen
+# Author : Tianlu Chen, Tao Sun, Dandan Liang, Mengci Li
 # Email  : chentianlu@sjtu.edu.cn
 # Date   : 2020-08
 # Version: 1.0
@@ -13,9 +13,9 @@
 #
 ######################################################################################
 ## Input:                                                                           ##
-##		metaData --- A dataframe of metabolites                                       ##
+##    metaData --- A dataframe of metabolites                                       ##
 ##                       (rows: samples,columns: metabolites)                       ##                    
-##		micData --- A dataframe of microbes                                           ##
+##    micData --- A dataframe of microbes                                           ##
 ##                       (rows: samples,columns: microbes)                          ##  
 ##    covdata --- A dataframe of confounder                                         ##
 ##                       (rows:samples,columns:confounder)                          ##
@@ -27,7 +27,7 @@
 ##                                                                                  ##
 ######################################################################################
 ## Output:                                                                          ## 
-## 	  res --- A list included coefficient, p value and type of correlation          ##
+##    res --- A list included coefficient, p value and type of correlation          ##
 ##                                                                                  ##
 ######################################################################################
 #---------------------------------------------------------------------------------------------------------------------

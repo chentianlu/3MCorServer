@@ -3,7 +3,7 @@
 # File: metabolitesPrepro.R
 # Aim : Preprocessing for metabolome data
 #---------------------------------------------------------------------------------------------------------------------
-# Author : Tianlu Chen
+# Author : Tianlu Chen, Tao Sun, Dandan Liang, Mengci Li
 # Email  : chentianlu@sjtu.edu.cn
 # Date   : 2020-08
 # Version: 1.0
@@ -12,9 +12,9 @@
 #
 ######################################################################################
 ## Input:                                                                           ##
-##		metaData --- A dataframe of metabolites                                       ##
-##                       (rows: samples,columns: metabolites)                       ##                    
-##		missPro --- Flag of whether to complete the missing value                     ##
+##    metaData --- A dataframe of metabolites                                       ##
+##                       (rows: samples,columns: metabolites)                       ##
+##    missPro --- Flag of whether to complete the missing value                     ##
 ##                Default: TRUE                                                     ##
 ##    missMethod --- Method for completing missing values                           ##
 ##                Default: QRILC                                                    ##
@@ -30,7 +30,7 @@
 ##                Default: continuous                                               ##
 ######################################################################################
 ## Output:                                                                          ## 
-## 	  metabolites_preproRes --- The dataframe of metabolites after preprocessing    ##
+##    metabolites_preproRes --- The dataframe of metabolites after preprocessing    ##
 ##                       (rows: samples,columns: metabolites)                       ##
 ##                                                                                  ##
 ######################################################################################

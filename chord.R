@@ -3,7 +3,7 @@
 # File: chord.R
 # Aim : Draw the chord of correlation between metabolome and microbiome modules
 #---------------------------------------------------------------------------------------------------------------------
-# Author : Tianlu Chen
+# Author : Tianlu Chen, Tao Sun, Dandan Liang, Mengci Li
 # Email  : chentianlu@sjtu.edu.cn
 # Date   : 2020-08
 # Version: 1.0

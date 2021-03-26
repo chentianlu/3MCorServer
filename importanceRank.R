@@ -3,7 +3,7 @@
 # File: importanceRank.R
 # Aim : Draw a histogram of the importance of variables in each module 
 #---------------------------------------------------------------------------------------------------------------------
-# Author : Tianlu Chen
+# Author : Tianlu Chen, Tao Sun, Dandan Liang, Mengci Li
 # Email  : chentianlu@sjtu.edu.cn
 # Date   : 2020-08
 # Version: 1.0
@@ -12,15 +12,15 @@
 #
 ########################################################################################
 ## Input:                                                                             ##
-##		cluData --- A list included the classified metabolome or microbiome modules     ##
+##    cluData --- A list included the classified metabolome or microbiome modules     ##
 ##                results from metabolitesCluster.R or microbesCluster.R              ##
-##    clusterName --- The module name(e.g. "Meta1")                                   ##                 
+##    clusterName --- The module name(e.g. "Meta1")                                   ##
 ##    clustergroup --- The module name belong to which kinds of module                ##
 ##                Default: All                                                        ##
 ##                                                                                    ##
 ########################################################################################
 ## Output:                                                                            ## 
-## 	  Graph results in PDF format                                                     ##
+##    Graph results in PDF format                                                     ##
 ##                                                                                    ##
 ########################################################################################
 #---------------------------------------------------------------------------------------------------------------------
@@ -53,7 +53,7 @@ importanceRank <- function(cluData,clusterName,clustergroup = "All")
     fill_cor <- "#00b692"
   }
   
-  ### PCA¡¢PCoA
+  ### PCAÂ¡Â¢PCoA
   if(all(cluster_data$cluster_name == "all")){
     plot_data <- as.data.frame(cluster_data[,clusterName]) 
     rownames(plot_data) <- rownames(cluster_data)

@@ -3,7 +3,7 @@
 # File: individualCor.R
 # Aim : Draw a histogram of the importance of variables in each module 
 #---------------------------------------------------------------------------------------------------------------------
-# Author : Tianlu Chen
+# Author : Tianlu Chen, Tao Sun, Dandan Liang, Mengci Li
 # Email  : chentianlu@sjtu.edu.cn
 # Date   : 2020-08
 # Version: 1.0
@@ -12,10 +12,10 @@
 #
 ########################################################################################
 ## Input:                                                                             ##
-##		metaIndData --- A dataframe of metabolites                                      ##
-##                       (rows: samples,columns: metabolites)                         ## 
+##    metaIndData --- A dataframe of metabolites                                      ##
+##                       (rows: samples,columns: metabolites)                         ##
 ##    micIndData --- A dataframe of microbes                                          ##
-##                       (rows: samples,columns: microbes)                            ##           
+##                       (rows: samples,columns: microbes)                            ##
 ##    phenoData --- A dataframe of phenotype data                                     ##
 ##                  (rows: samples,columns: phenotype)                                ##
 ##    phenoDataType --- Phenotype data type                                           ##
@@ -29,7 +29,7 @@
 ##                                                                                    ##
 ########################################################################################
 ## Output:                                                                            ## 
-## 	  cor_res ---  A list included coefficient, p value and p.adjust value            ##
+##    cor_res ---  A list included coefficient, p value and p.adjust value            ##
 ##                 of the correlation between metabolome data and microbiome          ##
 ##                 data                                                               ##
 ##                                                                                    ##

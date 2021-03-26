@@ -3,7 +3,7 @@
 # File: network3M.R
 # Aim : Draw a network diagram of the correlation between metabolites,microbes and phenotypes 
 #---------------------------------------------------------------------------------------------------------------------
-# Author : Tianlu Chen
+# Author : Tianlu Chen, Tao Sun, Dandan Liang, Mengci Li
 # Email  : chentianlu@sjtu.edu.cn
 # Date   : 2020-08
 # Version: 1.0
@@ -12,7 +12,7 @@
 #
 ########################################################################################
 ## Input:                                                                             ##
-##		individualCorData --- A list included coefficient, p value and p.adjust value   ##
+##    individualCorData --- A list included coefficient, p value and p.adjust value   ##
 ##                 of the correlation between metabolome data and microbiome data     ##  
 ##                 from individualCor.R                                               ##
 ##    rThreshold --- The correlation coefficient threshold to filter nodes            ##
@@ -26,7 +26,7 @@
 ##                                                                                    ##
 ########################################################################################
 ## Output:                                                                            ## 
-## 	  network_edge_df ---  A list included coefficient, p value and p.adjust value    ##
+##    network_edge_df ---  A list included coefficient, p value and p.adjust value    ##
 ##                 of the correlation between metabolome data and microbiome          ##
 ##                 data                                                               ##
 ##                                                                                    ##

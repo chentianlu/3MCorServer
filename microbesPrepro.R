@@ -3,7 +3,7 @@
 # File: microbesPrepro.R
 # Aim : Preprocessing for microbiome data
 #---------------------------------------------------------------------------------------------------------------------
-# Author : Tianlu Chen
+# Author : Tianlu Chen, Tao Sun, Dandan Liang, Mengci Li
 # Email  : chentianlu@sjtu.edu.cn
 # Date   : 2020-08
 # Version: 1.0
@@ -12,9 +12,9 @@
 #
 ######################################################################################
 ## Input:                                                                           ##
-##		micData --- A dataframe of microbes                                           ##
+##    micData --- A dataframe of microbes                                           ##
 ##                       (rows: samples,columns: microbes)                          ##                    
-##		missPro --- Flag of whether to complete the missing value                     ##
+##    missPro --- Flag of whether to complete the missing value                     ##
 ##                Default: TRUE                                                     ##
 ##    missMethod --- Method for completing missing values                           ##
 ##                Default: mean                                                     ##
@@ -32,7 +32,7 @@
 ##                Default: continuous                                               ##
 ######################################################################################
 ## Output:                                                                          ## 
-## 	  microbes_preproRes --- The dataframe of microbes after preprocessing         ##
+##     microbes_preproRes --- The dataframe of microbes after preprocessing         ##
 ##                       (rows: samples,columns: microbes)                          ##
 ##                                                                                  ##
 ######################################################################################

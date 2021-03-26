@@ -3,7 +3,7 @@
 # File: globalCor.R
 # Aim : The global correlation between metabolome and microbiome
 #---------------------------------------------------------------------------------------------------------------------
-# Author : Tianlu Chen
+# Author : Tianlu Chen, Tao Sun, Dandan Liang, Mengci Li
 # Email  : chentianlu@sjtu.edu.cn
 # Date   : 2020-08
 # Version: 1.0
@@ -12,9 +12,9 @@
 #
 ######################################################################################
 ## Input:                                                                           ##
-##		metaData --- A dataframe of metabolites                                       ##
-##                       (rows: samples,columns: metabolites)                       ##                    
-##		micData --- A dataframe of microbes                                           ##
+##    metaData --- A dataframe of metabolites                                       ##
+##                       (rows: samples,columns: metabolites)                       ##
+##    micData --- A dataframe of microbes                                           ##
 ##                       (rows: samples,columns: microbes)                          ## 
 ##    corMethod --- Method of the global correlation                                ##
 ##                  Default: CCA                                                    ##
@@ -25,7 +25,7 @@
 ##                                                                                  ##
 ######################################################################################
 ## Output:                                                                          ## 
-## 	  Graph results in PDF format                                                   ##
+##    Graph results in PDF format                                                   ##
 ##                                                                                  ##
 ######################################################################################
 #---------------------------------------------------------------------------------------------------------------------
@@ -118,7 +118,7 @@ globalCor <- function(metaData,micData,corMethod = "CCA",phenoData = NA,phenoDat
       metacoef$sq <- sqrt(metacoef[,1]^2 + metacoef[,2]^2)
       ### Top 10 Metabolites and Microbes
       if(nrow(metacoef) > 10 ){
-        metacoef =  metacoef[order(metacoef$sq,decreasing = T),][1:10,] #°´µÚÒ»ÁĞµİÔöÅÅĞò
+        metacoef =  metacoef[order(metacoef$sq,decreasing = T),][1:10,] #æŒ‰ç¬¬ä¸€åˆ—é€’å¢æ’åº
       }
       
       miccoef <- data.frame(CCA1 = cca_res1$species[,1],CCA2 = cca_res1$species[,2])
@@ -127,7 +127,7 @@ globalCor <- function(metaData,micData,corMethod = "CCA",phenoData = NA,phenoDat
       miccoef$type <- "Microbes"
       miccoef$sq <- sqrt(miccoef[,1]^2 + miccoef[,2]^2)
       if(nrow(miccoef) > 10 ){
-        miccoef =  miccoef[order(miccoef$sq,decreasing = T),][1:10,] #°´µÚÒ»ÁĞµİÔöÅÅĞò
+        miccoef =  miccoef[order(miccoef$sq,decreasing = T),][1:10,] #æŒ‰ç¬¬ä¸€åˆ—é€’å¢æ’åº
       }
       
       biplot_df <- rbind(metacoef,miccoef)
@@ -267,7 +267,7 @@ globalCor <- function(metaData,micData,corMethod = "CCA",phenoData = NA,phenoDat
       metaco$sq <- sqrt(metaco[,1]^2 + metaco[,2]^2)
       ### Top 10 Metabolites and Microbes
       if(nrow(metaco) > 10 ){
-        metaco =  metaco[order(metaco$sq,decreasing = T),][1:10,] #°´µÚÒ»ÁĞµİÔöÅÅĞò
+        metaco =  metaco[order(metaco$sq,decreasing = T),][1:10,] #æŒ‰ç¬¬ä¸€åˆ—é€’å¢æ’åº
       }
       colnames(metaco) <- c("Axis1","Axis2","color","type","sq")
       
@@ -276,7 +276,7 @@ globalCor <- function(metaData,micData,corMethod = "CCA",phenoData = NA,phenoDat
       micli$type <- "Microbes"
       micli$sq <- sqrt(micli[,1]^2 + micli[,2]^2)
       if(nrow(micli) > 10 ){
-        micli =  micli[order(micli$sq,decreasing = T),][1:10,] #°´µÚÒ»ÁĞµİÔöÅÅĞò
+        micli =  micli[order(micli$sq,decreasing = T),][1:10,] #æŒ‰ç¬¬ä¸€åˆ—é€’å¢æ’åº
       }
       
       biplot_df <- rbind(metaco,micli)
@@ -304,7 +304,7 @@ globalCor <- function(metaData,micData,corMethod = "CCA",phenoData = NA,phenoDat
               plot.background = element_rect(fill = "transparent",colour = NA)) 
       
       ggsave(paste0("./results/Inter-Cor/global/CIA_plot_",phenotype,".pdf"),width = 7,height = 5)
-      #CoIA ·ÖÎöĞ­¹ßÁ¿¾ØÕóÌØÕ÷¸ùµÄ·Ö½âÇé¿ö
+      #CoIA åˆ†æåæƒ¯é‡çŸ©é˜µç‰¹å¾æ ¹çš„åˆ†è§£æƒ…å†µ
       # summary_coin$EigDec
       
       ### importance of metabolites and microbes in Axis1
@@ -548,11 +548,11 @@ globalCor <- function(metaData,micData,corMethod = "CCA",phenoData = NA,phenoDat
       set.seed(1221L)
       crossval_o2m(X, Y, 1:4, 1:2, 1:2, nr_folds = 10)
       fit0 = o2m(X = X, Y = Y, n = 2, nx = 2, ny = 2)
-      ### Joint X importance£ºfit0$Tt
+      ### Joint X importanceï¼šfit0$Tt
       ### 
       ### Joint X loadings: fit0$W.
       ### 
-      ### Joint Y importance£ºfit0$U
+      ### Joint Y importanceï¼šfit0$U
       ### 
       ### Joint Y loadings: fit0$C.
       
